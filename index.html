@@ -15,7 +15,7 @@
     <div class="row my-3">
       <div class="col">
         <h5>Nome e Cognome</h5>
-        <input class="form-control" type="text" id="nome" placeholder="Inserisci nome e cognome">
+        <input class="form-control" type="text" id="name" placeholder="Inserisci nome e cognome">
       </div>
       <div class="col">
         <h5>Km da percorerre</h5>
@@ -23,7 +23,7 @@
       </div>
       <div class="col">
         <h5>Fascia d'età</h5>
-        <select class="form-select" aria-label="Default select example">
+        <select class="form-select" aria-label="Default select example" id="age">
           <option selected>Scegliere la fascia età</option>
           <option value="1">Maggiorenne</option>
           <option value="2">Minorenne</option>
@@ -31,7 +31,17 @@
         </select>
       </div>
     </div>
+    <div class="action text-center">
+      <button type="button" class="btn btn-secondary" id="btn_insert">Inserisci</button>
+      <button type="button" class="btn btn-secondary" id="btn_clean">Annulla</button>
+    </div>
   </div>
+  <h2>Il tuo biglietto</h2>
+  <div class="name"></div>
+  <div class="offerta"></div>
+  <div class="carrozza"></div>
+  <div class="codice"></div>
+  <div class="costo"></div>
   <script src="js/script.js"></script>
 </body>
 </html>
