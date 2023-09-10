@@ -1,7 +1,29 @@
-h1{
+h2{
   color: black;
+  padding-bottom: 15px;
+  border-bottom: 5px solid #b91450;
 }
 
 h5{
   color: black;
+}
+
+body{
+  background-color: #b91450;
+}
+
+.info_insert{
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.output{
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.output p{
+  font-weight: bold;
 }

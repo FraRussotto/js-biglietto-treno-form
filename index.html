@@ -11,39 +11,56 @@
   <div class="container my-5 text-center text-white">
 
     <h1>Calcola il prezzo del biglietto</h1>
-
-    <div class="row my-3">
-      <div class="col">
-        <h5>Nome e Cognome</h5>
-        <input class="form-control" type="text" id="name" placeholder="Inserisci nome e cognome">
+    <div class="info_insert">
+      <div class="row my-3">
+        <div class="col">
+          <h5>Passeggero</h5>
+          <input class="form-control" type="text" id="name" placeholder="Nome e cognome">
+        </div>
+        <div class="col">
+          <h5>Distanza</h5>
+          <input class="form-control" type="number" id="km" placeholder="Inserisci km">
+        </div>
+        <div class="col">
+          <h5>Fascia d'età</h5>
+          <select class="form-select" aria-label="Default select example" id="age">
+            <option value="0">Scegliere</option>
+            <option value="1">Minorenne</option>
+            <option value="2">Maggiorenne</option>
+            <option value="3">Over 65</option>
+          </select>
+        </div>
       </div>
-      <div class="col">
-        <h5>Km da percorerre</h5>
-        <input class="form-control" type="number" id="km" placeholder="Inserisci i km da pecorrere">
+      <div class="action text-center py-2">
+        <button type="button" class="btn btn-danger" id="btn_insert">Inserisci</button>
+        <button type="button" class="btn btn-secondary" id="btn_clean">Annulla</button>
       </div>
-      <div class="col">
-        <h5>Fascia d'età</h5>
-        <select class="form-select" aria-label="Default select example" id="age">
-          <option selected>Scegliere la fascia età</option>
-          <option value="1">Minorenne</option>
-          <option value="2">Maggiorenne</option>
-          <option value="3">Over 65</option>
-        </select>
-      </div>
-    </div>
-    <div class="action text-center">
-      <button type="button" class="btn btn-secondary" id="btn_insert">Inserisci</button>
-      <button type="button" class="btn btn-secondary" id="btn_clean">Annulla</button>
     </div>
   </div>
-  <div class="outpout container">
+  <div class="output d-none container text-center">
     <h2>Il tuo biglietto</h2>
       <div class="ticket d-flex justify-content-between">
-        <div class="user">Nome e cognome</div>
-        <div class="discount">Tipo di promo</div>
-        <div class="n_carriage">Numero di carrozza</div>
-        <div class="cap">CAP</div>
-        <div class="final_price">Price</div>
+        <div>
+          <p>Passeggero</p>
+          <div class="user">
+        </div>
+      </div>
+      <div>
+        <p>Offerta</p>
+        <div class="discount"></div>
+      </div>
+      <div class="div">
+        <p>Numero di carrozza</p>
+        <div class="n_carriage"></div>
+      </div>
+      <div class="div">
+        <p>Codice Postale</p>
+        <div class="cap"></div>
+      </div>
+      <div class="div">
+        <p>Prezzo</p>
+        <div class="final_price"></div>
+      </div>
       </div>
   </div>
   
