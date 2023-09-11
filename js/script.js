@@ -37,17 +37,17 @@ btnInsert.addEventListener("click", function(){
   if(ageUser == 1){
     price *= 1 - (discount20/100);
     document.querySelector(".discount").innerHTML = "Promo YOUNG";
-    document.querySelector(".final_price").innerHTML = price;
+    document.querySelector(".final_price").innerHTML = price.toFixed(2);
   }else if(ageUser == 3){
     price *= 1 - (discount40/100);
     document.querySelector(".discount").innerHTML = "Promo OVER 65";
-    document.querySelector(".final_price").innerHTML = price;
+    document.querySelector(".final_price").innerHTML = price.toFixed(2);
   }
 
   nCarriage =  Math.floor(Math.random() * 15) + 1;
   postalCode = Math.floor(Math.random() * 50) + 100;
 
-  document.querySelector(".final_price").innerHTML = "&euro;" + price;
+  document.querySelector(".final_price").innerHTML = "&euro;" + price.toFixed(2);
   document.querySelector(".user").innerHTML = nameUser;
   document.querySelector(".n_carriage").innerHTML = nCarriage;
   document.querySelector(".cap").innerHTML = "90" + postalCode;
